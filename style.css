@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat:repeat-x;
+    background-color: hsl(225, 100%, 94%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card {
+    width: 450px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+}
+
+.card .imagem {
+    width: 100%;
+}
+
+.imagem img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem;
+}
+
+.texto h1 {
+    font-size: 30px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 1rem;
+}
+
+.texto .paragrafo {
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 2rem;
+}
+
+.valor {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    padding: 20px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+}
+
+.valor .icone {
+    margin-right: 20px;
+}
+
+.plano-anual {
+    margin-right: 90px;
+}
+
+.plano {
+    font-weight: 900;
+    font-size: 16px;
+    color: hsl(223, 47%, 23%);
+}
+
+.ano {
+    font-weight: 500;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+
+.change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mudar {
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.mudar:hover {
+    color: hsl(245, 50%, 52%);
+    cursor: pointer; 
+    text-decoration: none;
+}
+
+button {
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+button:hover {
+    background-color: hsl(245, 50%, 52%);
+    cursor: pointer;
+}
+
+.cancelar {
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+}
+
+.cancelar:hover {
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+@media (max-width: 376px) {
+    .card {
+        width: 90%;
+        height: 80%;
+    }
+
+    .imagem {
+        width: 100%;
+    }
+
+    .imagem img {
+        width: 100%;
+    }
+
+    .texto {
+        padding: 30px;
+    }
+
+    .texto h1 {
+        font-size: 25px;
+    }
+
+    .valor {
+        padding: 10px;
+    }
+
+    .valor .icone {
+        width: 45px;
+        height: 45px;
+    }
+
+    .plano-anual {
+        margin-right: 35px;
+    }
+
+    .plano {
+        font-size: 15px;
+    }
+
+    .mudar {
+        font-size: 13px;
+    }
+}
